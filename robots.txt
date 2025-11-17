@@ -1,0 +1,37 @@
+# robots.txt for HLPFL Website
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://hlpfl.dev/sitemap.xml
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow CSS and JS
+Allow: /src/css/
+Allow: /src/js/
+Allow: /favicons/
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
