@@ -1544,6 +1544,8 @@ n        }
         }
 
     </style>
+
+});
 <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
        
           
@@ -1706,83 +1708,85 @@ n    </section>
     </footer>
 
 <script>
-        // Loading Screen
 
-        // Create floating particles
-        function createParticles() {
-            const particlesContainer = document.querySelector('.loading-particles');
-            if (!particlesContainer) return;
-            
-            const particleCount = 30;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'loading-particle';
-                
-                // Smaller particles for more elegant effect (1px to 3px)
-                const size = Math.random() * 2 + 1;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                // Random starting position
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                
-                // Random animation duration and delay
-                const duration = Math.random() * 10 + 15;
-                const delay = Math.random() * 8;
-                particle.style.animationDuration = duration + 's';
-                particle.style.animationDelay = delay + 's';
-                
-                // Random brightness variations
-                const brightness = Math.random() * 0.5 + 0.8;
-                particle.style.filter = `brightness(${brightness})`;
-                
-                particlesContainer.appendChild(particle);
-            }
-        }
+document.addEventListener('DOMContentLoaded', function() {
+                // Loading Screen
         
-        // Initialize particles
-        createParticles();
-
-        let progress = 0;
-        const loadingBar = document.getElementById('loadingBar');
-        const loadingPercentage = document.getElementById('loadingPercentage');
-        const loadingScreen = document.getElementById('loadingScreen');
+                // Create floating particles
+                function createParticles() {
+                    const particlesContainer = document.querySelector('.loading-particles');
+                    if (!particlesContainer) return;
+                    
+                    const particleCount = 30;
+                    
+                    for (let i = 0; i < particleCount; i++) {
+                        const particle = document.createElement('div');
+                        particle.className = 'loading-particle';
+                        
+                        // Smaller particles for more elegant effect (1px to 3px)
+                        const size = Math.random() * 2 + 1;
+                        particle.style.width = size + 'px';
+                        particle.style.height = size + 'px';
+                        
+                        // Random starting position
+                        particle.style.left = Math.random() * 100 + '%';
+                        particle.style.top = Math.random() * 100 + '%';
+                        
+                        // Random animation duration and delay
+                        const duration = Math.random() * 10 + 15;
+                        const delay = Math.random() * 8;
+                        particle.style.animationDuration = duration + 's';
+                        particle.style.animationDelay = delay + 's';
+                        
+                        // Random brightness variations
+                        const brightness = Math.random() * 0.5 + 0.8;
+                        particle.style.filter = `brightness(${brightness})`;
+                        
+                        particlesContainer.appendChild(particle);
+                    }
+                }
+                
+                // Initialize particles
+                createParticles();
         
-        const loadingInterval = setInterval(() => {
-            progress += Math.random() * 30;
-            if (progress >= 100) {
-                progress = 100;
-                clearInterval(loadingInterval);
-                setTimeout(() => {
-                    loadingScreen.classList.add('hidden');
-                }, 500);
-            }
-            loadingBar.style.width = progress + '%';
-            loadingPercentage.textContent = Math.floor(progress) + '%';
-        }, 200);
-
-        // Create Floating Particles
-        const particlesContainer = document.getElementById('particles');
-        for (let i = 0; i < 200; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.top = Math.random() * 100 + '%';
-            particle.style.animationDelay = Math.random() * 20 + 's';
-            particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
-            particlesContainer.appendChild(particle);
-        }
-
-        // Header Scroll Effect
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+                let progress = 0;
+                const loadingBar = document.getElementById('loadingBar');
+                const loadingPercentage = document.getElementById('loadingPercentage');
+                const loadingScreen = document.getElementById('loadingScreen');
+                
+                const loadingInterval = setInterval(() => {
+                    progress += Math.random() * 30;
+                    if (progress >= 100) {
+                        progress = 100;
+                        clearInterval(loadingInterval);
+                        setTimeout(() => {
+                            loadingScreen.classList.add('hidden');
+                        }, 500);
+                    }
+                    loadingBar.style.width = progress + '%';
+                    loadingPercentage.textContent = Math.floor(progress) + '%';
+                }, 200);
+        
+                // Create Floating Particles
+                const particlesContainer = document.getElementById('particles');
+                for (let i = 0; i < 200; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.top = Math.random() * 100 + '%';
+                    particle.style.animationDelay = Math.random() * 20 + 's';
+                    particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                    particlesContainer.appendChild(particle);
+                }
+        
+                // Header Scroll Effect
+                const header = document.getElementById('header');
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
         });
 
         // Reveal Animation on Scroll
@@ -1794,7 +1798,7 @@ n    </section>
                 if (elementTop < windowHeight - 100) {
                     element.classList.add('active');
                 }
-            });
+});
         };
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll();
@@ -1809,7 +1813,7 @@ n    </section>
                 if (!isActive) {
                     item.classList.add('active');
                 }
-            });
+});
         });
 
         // Smooth Scroll for Anchor Links
@@ -1821,9 +1825,9 @@ n    </section>
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
-                    });
+        });
                 }
-            });
+});
         });
     
         // Cookie Consent Banner
@@ -1864,12 +1868,12 @@ n    </section>
         const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
         
         document.addEventListener('keydown', (e) => {
-            konamiCode.push(e.key);
-            konamiCode = konamiCode.slice(-10);
-            
-            if (konamiCode.join('') === konamiSequence.join('')) {
-                activateKonamiMode();
-            }
+                    konamiCode.push(e.key);
+                    konamiCode = konamiCode.slice(-10);
+                    
+                    if (konamiCode.join('') === konamiSequence.join('')) {
+                        activateKonamiMode();
+                    }
         });
         
         function activateKonamiMode() {
@@ -1924,19 +1928,19 @@ n    </section>
         let dTimer;
         
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'd' || e.key === 'D') {
-                dPresses++;
-                clearTimeout(dTimer);
-                
-                if (dPresses === 3) {
-                    toggleDevMode();
-                    dPresses = 0;
-                }
-                
-                dTimer = setTimeout(() => {
-                    dPresses = 0;
-                }, 1000);
-            }
+                    if (e.key === 'd' || e.key === 'D') {
+                        dPresses++;
+                        clearTimeout(dTimer);
+                        
+                        if (dPresses === 3) {
+                            toggleDevMode();
+                            dPresses = 0;
+                        }
+                        
+                        dTimer = setTimeout(() => {
+                            dPresses = 0;
+                        }, 1000);
+                    }
         });
         
         function toggleDevMode() {
@@ -1957,7 +1961,7 @@ n    </section>
                     logoSurprise();
                     logoClicks = 0;
                 }
-            });
+});
         }
         
         function logoSurprise() {
@@ -2007,7 +2011,7 @@ n    </section>
                 if (entry.isIntersecting) {
                     entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
                 }
-            });
+});
         }, observerOptions);
         
         // Observe all cards and sections
@@ -2023,7 +2027,7 @@ n    </section>
             const images = document.querySelectorAll('img[loading="lazy"]');
             images.forEach(img => {
                 img.src = img.dataset.src;
-            });
+});
         } else {
             // Fallback for browsers that don't support lazy loading
             const script = document.createElement('script');
@@ -2062,7 +2066,7 @@ n    </section>
                     preloadLink.href = url;
                     document.head.appendChild(preloadLink);
                 }
-            });
+});
         }
         
         // Preload on idle
@@ -2077,7 +2081,7 @@ n    </section>
             window.addEventListener('load', () => {
                 // Uncomment to enable service worker
                 // navigator.serviceWorker.register('/sw.js');
-            });
+});
         }
         
         // Monitor performance
@@ -2088,7 +2092,7 @@ n    </section>
                         console.log('LCP:', entry.startTime);
                     }
                 }
-            });
+});
             
             try {
                 perfObserver.observe({ entryTypes: ['largest-contentful-paint'] });
@@ -2106,9 +2110,11 @@ n    </section>
                     submitBtn.disabled = true;
                     submitBtn.textContent = 'Sending...';
                 }
-            });
+});
         });
 
+
+});
     </script>
    
    
