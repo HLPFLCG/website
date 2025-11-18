@@ -1507,6 +1507,9 @@
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
+
+       <!-- Floating Particles -->
+       <div class="particles" id="particles"></div>
         <div class="loading-particles" id="loadingParticles"></div>  <!-- NEW: Add this line -->
         <img src="hlpfl-logo-full.svg" alt="HLPFL Logo" class="loading-logo">
         <div class="loading-bar-container">
@@ -1605,7 +1608,7 @@
 
            // Create loading particles
            function createLoadingParticles() {
-               for (let i = 0; i < 30; i++) {
+               for (let i = 0; i < 200; i++) {
                    const particle = document.createElement('div');
                    particle.className = 'loading-particle';
                    particle.style.left = Math.random() * 100 + '%';

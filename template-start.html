@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>HLPFL | Affordable Websites for First-Time Founders</title>
+    <meta name="title" content="HLPFL |  Websites for Entrepeneurs">
+    <meta name="description" content="High-quality websites for small business owners at prices you can actually afford. 72-hour delivery, 100% US-based work, no outsourcing. Our prices are negotiable.">
+    <meta name="keywords" content="affordable web development, first-time founders, startup websites, cheap websites, web design, HLPFL">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hlpfl.dev/">
+    <meta property="og:title" content="HLPFL | Affordable Websites for First-Time Founders">
+    <meta property="og:description" content="High-quality websites for first-time founders at prices you can actually afford. 72-hour delivery, 100% US-based work.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hlpfl.dev/">
+    <meta property="twitter:title" content="HLPFL | Affordable Websites for First-Time Founders">
+    <meta property="twitter:description" content="High-quality websites for first-time founders at prices you can actually afford.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicons/favicon-512.png">
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+    
+    <style>
+        :root {
+            --primary: #c87941;
+            --primary-light: #e09560;
+            --accent: #2c5f6f;
+            --dark: #0a0a0a;
+            --dark-light: #1a1a1a;
+            --text: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        
+        .loading-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loading-logo {
+            width: 400px;
+            height: auto;
+            margin-bottom: 4rem;
+            animation: logoFloat 3s ease-in-out infinite, logoPulse 2s ease-in-out infinite;
+            filter: drop-shadow(0 0 30px rgba(200, 121, 65, 0.5));
+        }
+        
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes logoPulse {
+            0%, 100% { filter: drop-shadow(0 0 30px rgba(200, 121, 65, 0.5)); }
+            50% { filter: drop-shadow(0 0 50px rgba(200, 121, 65, 0.8)); }
+        }
+        
+        .loading-bar-container {
+            width: 400px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        
+        .loading-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+        
+        .loading-percentage {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        /* Floating Particles Background - Starlight Effect */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 20s infinite ease-in-out, twinkle 3s infinite ease-in-out, drift 8s infinite ease-in-out;
+            box-shadow: 
+                0 0 4px rgba(200, 121, 65, 0.8),
+                0 0 8px rgba(200, 121, 65, 0.4),
+                0 0 12px rgba(200, 121, 65, 0.2);
+        }
+        
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0.3;
+            }
+            25% { 
+                transform: translateY(-100px) translateX(50px) scale(1.2);
+                opacity: 0.8;
+            }
+            50% { 
+                transform: translateY(-200px) translateX(-50px) scale(0.8);
+                opacity: 1;
+            }
+            75% { 
+                transform: translateY(-100px) translateX(100px) scale(1.1);
+                opacity: 0.6;
+            }
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { 
+                opacity: 0.2;
+                filter: brightness(0.5);
+            }
+            50% { 
+                opacity: 1;
+                filter: brightness(1.5);
+            }
+        }
+        
+        @keyframes drift {
+            0% { transform: translateX(0) translateY(0); }
+            33% { transform: translateX(30px) translateY(-30px); }
+            66% { transform: translateX(-20px) translateY(20px); }
+            100% { transform: translateX(0) translateY(0); }
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }

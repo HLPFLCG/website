@@ -142,29 +142,7 @@
         }
         
         @keyframes float {
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
             0%, 100% { transform: translateY(0) translateX(0); }
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
             25% { transform: translateY(-100px) translateX(50px); }
             50% { transform: translateY(-200px) translateX(-50px); }
             75% { transform: translateY(-100px) translateX(100px); }
@@ -1204,113 +1182,14 @@
         
         /* Floating Particles Background */
         .loading-particles {
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             position: absolute;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             top: 0;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             left: 0;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             width: 100%;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             height: 100%;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             overflow: hidden;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
             z-index: 1;
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
         }
-
-           .loading-particle {
-               position: absolute;
-               background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
-               box-shadow: 
-                   0 0 4px rgba(200, 121, 65, 0.8),
-                   0 0 8px rgba(200, 121, 65, 0.4),
-                   0 0 12px rgba(200, 121, 65, 0.2);
-               border-radius: 50%;
-               animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-           }
         
         .particle {
             position: absolute;
@@ -1320,65 +1199,10 @@
         }
         
         @keyframes float {
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
             0% {
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
                 transform: translateY(100vh) scale(0);
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
                 opacity: 0;
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
             }
-
-           @keyframes twinkle {
-               0%, 100% { opacity: 0.3; }
-               50% { opacity: 1; }
-           }
-           
-           @keyframes drift {
-               0%, 100% { transform: translateX(0); }
-               25% { transform: translateX(30px); }
-               75% { transform: translateX(-30px); }
-           }
             10% {
                 opacity: 1;
             }
@@ -1975,7 +1799,7 @@
             
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
-                particle.className = 'loading-particle';
+                particle.className = 'particle';
                 
                 // Random size between 2px and 8px
                 const size = Math.random() * 6 + 2;
@@ -2020,7 +1844,7 @@
 
         // Create Floating Particles
         const particlesContainer = document.getElementById('particles');
-        for (let i = 0; i < 200; i++) {
+        for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
             particle.style.left = Math.random() * 100 + '%';
@@ -2131,7 +1955,7 @@
             document.body.classList.add('konami-active');
             
             // Create confetti effect
-            for (let i = 0; i < 200; i++) {
+            for (let i = 0; i < 50; i++) {
                 createConfetti();
             }
             
