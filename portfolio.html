@@ -1173,9 +1173,24 @@
         
         .particle {
             position: absolute;
-            background: radial-gradient(circle, rgba(200, 121, 65, 0.8) 0%, rgba(200, 121, 65, 0) 70%);
+            background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
+            box-shadow: 
+                0 0 4px rgba(200, 121, 65, 0.8),
+                0 0 8px rgba(200, 121, 65, 0.4),
+                0 0 12px rgba(200, 121, 65, 0.2);
             border-radius: 50%;
-            animation: float linear infinite;
+            animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
+        }
+        
+        .loading-particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
+            box-shadow: 
+                0 0 4px rgba(200, 121, 65, 0.8),
+                0 0 8px rgba(200, 121, 65, 0.4),
+                0 0 12px rgba(200, 121, 65, 0.2);
+            border-radius: 50%;
+            animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
         }
         
         @keyframes float {
@@ -1851,23 +1866,26 @@
             
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
-                particle.className = 'particle';
+                particle.className = 'loading-particle';
                 
-                // Random size between 2px and 8px
-                const size = Math.random() * 6 + 2;
+                // Smaller particles for more elegant effect (1px to 3px)
+                const size = Math.random() * 2 + 1;
                 particle.style.width = size + 'px';
                 particle.style.height = size + 'px';
                 
-                // Random horizontal position
+                // Random starting position
                 particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
                 
-                // Random animation duration between 10s and 20s
-                const duration = Math.random() * 10 + 10;
+                // Random animation duration and delay
+                const duration = Math.random() * 10 + 15;
+                const delay = Math.random() * 8;
                 particle.style.animationDuration = duration + 's';
-                
-                // Random delay
-                const delay = Math.random() * 5;
                 particle.style.animationDelay = delay + 's';
+                
+                // Random brightness variations
+                const brightness = Math.random() * 0.5 + 0.8;
+                particle.style.filter = `brightness(${brightness})`;
                 
                 particlesContainer.appendChild(particle);
             }
