@@ -1604,52 +1604,150 @@
                       // Initialize particles
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-           createParticles();
+        // Standardized Loading Screen Implementation
+        let progress = 0;
+        const loadingBar = document.getElementById('loadingBar');
+        const loadingPercentage = document.getElementById('loadingPercentage');
+        const loadingScreen = document.getElementById('loadingScreen');
+        
+        const loadingInterval = setInterval(() => {
+            progress += Math.random() * 30;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(loadingInterval);
+                setTimeout(() => {
+                    loadingScreen.classList.add('hidden');
+                }, 500);
+            }
+            loadingBar.style.width = progress + '%';
+            loadingPercentage.textContent = Math.floor(progress) + '%';
+        }, 200);
 
-           let progress = 0;
-           const loadingBar = document.getElementById('loadingBar');
-           const loadingPercentage = document.getElementById('loadingPercentage');
-           const loadingScreen = document.getElementById('loadingScreen');
-           const loadingParticles = document.getElementById('loadingParticles');
+        // Create Loading Particles - Dense Starlight Effect
+        const loadingParticlesContainer = document.getElementById('loadingParticles');
+        if (loadingParticlesContainer) {
+            for (let i = 0; i < 150; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'loading-particle';
+                
+                // Smaller particles for more elegant effect (1px to 3px)
+                const size = Math.random() * 2 + 1;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                // Random starting position
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                
+                // Varied animation properties for natural movement
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 20) + 's';
+                
+                loadingParticlesContainer.appendChild(particle);
+            }
+        }
 
-           // Create loading particles
-           function createLoadingParticles() {
-               for (let i = 0; i < 200; i++) {
-                   const particle = document.createElement('div');
-                   particle.className = 'loading-particle';
-                   particle.style.left = Math.random() * 100 + '%';
-                   particle.style.top = Math.random() * 100 + '%';
-                   particle.style.width = Math.random() * 4 + 2 + 'px';
-                   particle.style.height = particle.style.width;
-                   particle.style.animationDelay = Math.random() * 5 + 's';
-                   particle.style.animationDuration = Math.random() * 10 + 10 + 's';
-                   loadingParticles.appendChild(particle);
-               }
-           }
+        // Create Floating Particles - Dense Starlight Effect (Background)
+        const particlesContainer = document.getElementById('particles');
+        if (particlesContainer) {
+            for (let i = 0; i < 200; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Smaller particles (1px to 3px)
+                const size = Math.random() * 2 + 1;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 25 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 20) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
 
-           // Loading animation
-           function updateLoading() {
-               progress += Math.random() * 15;
-               if (progress > 100) progress = 100;
+        // Cookies Banner
+        const banner = document.getElementById('cookieBanner');
+        const consent = localStorage.getItem('cookieConsent');
+        
+        // Only show banner if consent hasn't been given
+        if (!consent && banner) {
+            setTimeout(() => {
+                banner.classList.add('show');
+            }, 1000); // Show after 1 second
+        }
 
-               loadingBar.style.width = progress + '%';
-               loadingPercentage.textContent = Math.floor(progress) + '%';
+        // Cookie consent functions
+        window.acceptCookies = function() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            const banner = document.getElementById('cookieBanner');
+            if (banner) {
+                banner.classList.remove('show');
+            }
+        };
 
-               if (progress >= 100) {
-                   setTimeout(() => {
-                       loadingScreen.classList.add('hidden');
-                   }, 500);
-               } else {
-                   setTimeout(updateLoading, Math.random() * 200 + 100);
-               }
-           }
+        window.declineCookies = function() {
+            localStorage.setItem('cookieConsent', 'declined');
+            const banner = document.getElementById('cookieBanner');
+            if (banner) {
+                banner.classList.remove('show');
+            }
+        };
 
-           // Initialize
-           createLoadingParticles();
-           updateLoading();
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
 
+        // Reveal Animation on Scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                faqItems.forEach(i => i.classList.remove('active'));
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     });
     </script>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
 
            // Header scroll effect// Header scroll effect
            const header = document.getElementById('header');
