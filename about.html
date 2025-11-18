@@ -5,40 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title>About Us | HLPFL - Your Partner in Web Development</title>
-    <meta name="title" content="HLPFL |  Websites for Entrepeneurs">
-    <meta name="description" content="Learn about HLPFL's mission to make professional web development accessible to first-time founders.">
-    <meta name="keywords" content="affordable web development, first-time founders, startup websites, cheap websites, web design, HLPFL">
+    <title>About HLPFL | Your Partner in Web Development</title>
+    <meta name="title" content="About HLPFL | Web Development for First-Time Founders">
+    <meta name="description" content="We're on a mission to make professional web development accessible to every first-time founder, regardless of budget. 100% US-based work from Grand Rapids, MI.">
+    <meta name="keywords" content="about HLPFL, web development company, first-time founders, US-based development">
+    <meta name="author" content="HLPFL">
+    <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hlpfl.dev/">
-    <meta property="og:title" content="HLPFL | Affordable Websites for First-Time Founders">
-    <meta property="og:description" content="High-quality websites for first-time founders at prices you can actually afford. 72-hour delivery, 100% US-based work.">
+    <meta property="og:url" content="https://hlpfl.dev/about.html">
+    <meta property="og:title" content="About HLPFL | Your Partner in Web Development">
+    <meta property="og:description" content="We're on a mission to make professional web development accessible to every first-time founder, regardless of budget.">
+    <meta property="og:image" content="https://hlpfl.dev/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hlpfl.dev/">
-    <meta property="twitter:title" content="HLPFL | Affordable Websites for First-Time Founders">
-    <meta property="twitter:description" content="High-quality websites for first-time founders at prices you can actually afford.">
+    <meta property="twitter:url" content="https://hlpfl.dev/about.html">
+    <meta property="twitter:title" content="About HLPFL | Your Partner in Web Development">
+    <meta property="twitter:description" content="We're on a mission to make professional web development accessible to every first-time founder, regardless of budget.">
+    <meta property="twitter:image" content="https://hlpfl.dev/twitter-image.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="application-name" content="HLPFL">
+    <meta name="apple-mobile-web-app-title" content="HLPFL">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
+    <link rel="icon" type="image/svg+xml" href="hlpfl-symbol.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicons/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="favicons/favicon-512.png">
-    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Google Fonts - Professional Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary: #f9983f;
-            --primary-light: #ffb366;
-            --primary-glow: #ffaa44;
-            --accent: #2c5f6f;
-            --dark: #0a0a0a;
-            --dark-light: #1a1a1a;
-            --text: #ffffff;
-            --text-muted: #a0a0a0;
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #3b82f6;
+            --secondary: #64748b;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
 
         * {
@@ -52,56 +84,45 @@
         }
 
         body {
-            font-family: 'Orbitron', 'Rajdhani', 'Exo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--dark);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--light);
             color: var(--text);
-            overflow-x: hidden;
             line-height: 1.6;
+            font-weight: 400;
         }
 
-        /* Loading Screen - PRESERVE CURRENT IMPLEMENTATION */
+        /* Loading Screen */
         .loading-screen {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            background: white;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             z-index: 10000;
-            transition: opacity 0.8s ease, visibility 0.8s ease;
-        }
-
-        .loading-screen.hidden {
-            opacity: 0;
-            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
         }
 
         .loading-logo {
-            width: 400px;
+            width: 80px;
             height: auto;
-            margin-bottom: 4rem;
-            animation: logoFloat 3s ease-in-out infinite, logoPulse 2s ease-in-out infinite;
-            filter: drop-shadow(0 0 30px rgba(200, 121, 65, 0.5));
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite ease-in-out;
         }
 
-        @keyframes logoFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        @keyframes logoPulse {
-            0%, 100% { filter: drop-shadow(0 0 30px rgba(200, 121, 65, 0.5)); }
-            50% { filter: drop-shadow(0 0 50px rgba(249, 152, 63, 0.8)); }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
         }
 
         .loading-bar-container {
-            width: 300px;
+            width: 200px;
             height: 4px;
-            background: rgba(249, 152, 63, 0.2);
+            background: var(--gray-200);
             border-radius: 2px;
             overflow: hidden;
             margin-bottom: 1rem;
@@ -113,126 +134,41 @@
             border-radius: 2px;
             width: 0%;
             transition: width 0.3s ease;
-            box-shadow: 0 0 10px rgba(200, 121, 65, 0.5);
         }
 
         .loading-percentage {
-            color: var(--primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
             font-weight: 600;
-            font-size: 1.2rem;
+            color: var(--primary);
         }
 
-        /* Floating Particles Background - PRESERVE CURRENT IMPLEMENTATION */
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: radial-gradient(circle, rgba(249, 152, 63, 0.9) 0%, rgba(249, 152, 63, 0.3) 50%, transparent 70%);
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: float 20s infinite ease-in-out, twinkle 3s infinite ease-in-out, drift 8s infinite ease-in-out;
-            box-shadow: 
-                0 0 4px rgba(249, 152, 63, 0.8),
-                0 0 8px rgba(249, 152, 63, 0.4),
-                0 0 12px rgba(249, 152, 63, 0.2);
-        }
-
-        .loading-particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .loading-particle {
-            position: absolute;
-            background: radial-gradient(circle, rgba(249, 152, 63, 0.9) 0%, rgba(249, 152, 63, 0.3) 50%, transparent 70%);
-            box-shadow: 
-                0 0 4px rgba(249, 152, 63, 0.8),
-                0 0 8px rgba(249, 152, 63, 0.4),
-                0 0 12px rgba(249, 152, 63, 0.2);
-            border-radius: 50%;
-            animation: float 15s infinite ease-in-out, twinkle 2s infinite ease-in-out, drift 6s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) scale(0);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100vh) scale(1);
-                opacity: 0;
-            }
-        }
-
-        @keyframes twinkle {
-            0%, 100% {
-                opacity: 0.3;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 1;
-                transform: scale(1.5);
-            }
-        }
-
-        @keyframes drift {
-            0%, 100% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(30px);
-            }
-            75% {
-                transform: translateX(-30px);
-            }
-        }
-
-        /* Premium Navigation */
+        /* Navigation */
         .navbar {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            padding: 1.5rem 3rem;
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 26, 0.8) 100%);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(249, 152, 63, 0.1);
+            border-bottom: 1px solid var(--border);
             transition: all 0.3s ease;
         }
 
         .navbar.scrolled {
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.98) 0%, rgba(26, 26, 26, 0.95) 100%);
-            padding: 0.75rem 2rem;
+            background: white;
+            box-shadow: var(--shadow-md);
         }
 
         .navbar-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 1.5rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            height: 70px;
         }
 
         .navbar-logo {
@@ -241,8 +177,8 @@
             gap: 0.75rem;
             text-decoration: none;
             color: var(--text);
-            font-weight: 800;
-            font-size: 1.8rem;
+            font-weight: 700;
+            font-size: 1.5rem;
             transition: all 0.3s ease;
         }
 
@@ -258,7 +194,7 @@
         .navbar-menu {
             display: flex;
             list-style: none;
-            gap: 3rem;
+            gap: 2rem;
             align-items: center;
         }
 
@@ -266,8 +202,10 @@
             color: var(--text);
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.95rem;
             position: relative;
             transition: color 0.3s ease;
+            padding: 0.5rem 0;
         }
 
         .navbar-link:hover,
@@ -278,11 +216,11 @@
         .navbar-link::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -2px;
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            background: var(--primary);
             transition: width 0.3s ease;
         }
 
@@ -308,543 +246,463 @@
             transition: 0.3s;
         }
 
-        /* Premium Buttons */
+        /* Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 1.5rem 3rem;
-            border-radius: 12px;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
             font-weight: 600;
+            font-size: 0.95rem;
             text-decoration: none;
+            transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-            position: relative;
-            overflow: hidden;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            background: var(--primary);
             color: white;
-            box-shadow: 0 10px 30px rgba(249, 152, 63, 0.3);
+            box-shadow: var(--shadow);
         }
 
         .btn-primary:hover {
+            background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(249, 152, 63, 0.4);
+            box-shadow: var(--shadow-md);
         }
 
         .btn-secondary {
             background: transparent;
-            color: var(--text);
-            border: 2px solid rgba(249, 152, 63, 0.3);
+            color: var(--primary);
+            border: 2px solid var(--primary);
         }
 
         .btn-secondary:hover {
-            border-color: var(--primary);
-            color: var(--primary);
+            background: var(--primary);
+            color: white;
             transform: translateY(-2px);
-        }
-
-        .btn-magnetic {
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 6rem 2rem 4rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-title {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            font-weight: 900;
-            line-height: 1.1;
-            margin-bottom: 2rem;
-            background: linear-gradient(135deg, var(--text) 0%, var(--primary-light) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            margin-bottom: 3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.6;
-        }
-
-        .hero-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
         }
 
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, white 0%, var(--gray-100) 100%);
             position: relative;
-            z-index: 2;
-        }
-
-        /* Section */
-        .section {
-            padding: 6rem 0;
-            position: relative;
-            z-index: 2;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .mb-6 {
-            margin-bottom: 4rem;
-        }
-
-        .max-w-3xl {
-            max-width: 1000px;
-        }
-
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        h2 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            color: var(--text);
-        }
-
-        h3 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: var(--text);
-        }
-
-        p {
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(26, 26, 26, 0.8);
-            border-radius: 16px;
-            border: 1px solid rgba(249, 152, 63, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(249, 152, 63, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-
-        /* Services Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .service-card {
-            padding: 2.5rem;
-            background: rgba(26, 26, 26, 0.8);
-            border-radius: 16px;
-            border: 1px solid rgba(249, 152, 63, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(249, 152, 63, 0.3);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Portfolio Grid */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .portfolio-item {
-            position: relative;
-            border-radius: 16px;
             overflow: hidden;
-            aspect-ratio: 3/2;
-            transition: all 0.3s ease;
         }
 
-        .portfolio-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .portfolio-overlay {
+        .hero::before {
+            content: '';
             position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 2rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%);
+            pointer-events: none;
         }
 
-        .portfolio-item:hover .portfolio-overlay {
-            opacity: 1;
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        .portfolio-overlay h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--text);
         }
 
-        /* Contact Section */
-        .contact-content {
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* Story Section */
+        .story {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .story-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            margin-top: 3rem;
-        }
-
-        .contact-form {
-            background: rgba(26, 26, 26, 0.8);
-            padding: 2.5rem;
-            border-radius: 16px;
-            border: 1px solid rgba(249, 152, 63, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text);
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 1rem;
-            background: rgba(10, 10, 10, 0.5);
-            border: 1px solid rgba(249, 152, 63, 0.2);
-            border-radius: 8px;
-            color: var(--text);
-            font-family: 'Orbitron', 'Rajdhani', 'Exo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(249, 152, 63, 0.1);
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-        }
-
-        .contact-item {
-            display: flex;
             align-items: center;
-            gap: 1rem;
         }
 
-        .contact-icon {
-            font-size: 1.8rem;
-            min-width: 40px;
-            height: 40px;
+        .story-text h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text);
+        }
+
+        .story-text h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .story-text p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .story-image {
+            position: relative;
+        }
+
+        .story-image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(249, 152, 63, 0.1);
-            border-radius: 12px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
         }
 
-        /* Footer */
-        .footer {
-            background: var(--dark-light);
-            padding: 4rem 0 2rem;
-            border-top: 1px solid rgba(249, 152, 63, 0.1);
-            position: relative;
-            z-index: 2;
+        /* Values Section */
+        .values {
+            padding: 6rem 0;
+            background: var(--gray-100);
         }
 
-        .footer-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .footer-content {
+        .values-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
         }
 
-        .footer-brand {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        .value-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
         }
 
-        .footer-logo {
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 12px;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            text-decoration: none;
-            color: var(--text);
-            font-weight: 800;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .value-title {
+            font-family: 'Poppins', sans-serif;
             font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text);
         }
 
-        .footer-logo-symbol {
-            width: 32px;
-            height: 32px;
-        }
-
-        .footer-description {
+        .value-description {
             color: var(--text-muted);
             line-height: 1.6;
         }
 
-        .footer-section h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+        /* Why Choose Section */
+        .why-choose {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .why-item:hover {
+            background: var(--gray-100);
+            transform: translateX(5px);
+        }
+
+        .why-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .why-content h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
             color: var(--text);
+        }
+
+        .why-content p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Founder Section */
+        .founder {
+            padding: 6rem 0;
+            background: var(--gray-100);
+        }
+
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .founder-info h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text);
+        }
+
+        .founder-info h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .founder-info p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .founder-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .founder-image {
+            position: relative;
+        }
+
+        .founder-image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--gray-700), var(--gray-900));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta .btn {
+            background: white;
+            color: var(--primary);
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+        }
+
+        .cta .btn:hover {
+            background: var(--gray-100);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-section p {
+            color: var(--gray-400);
+            line-height: 1.6;
+            margin-bottom: 1rem;
         }
 
         .footer-links {
             list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
         }
 
         .footer-links a {
-            color: var(--text-muted);
+            color: var(--gray-400);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .footer-links a:hover {
-            color: var(--primary);
+            color: white;
         }
 
         .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            border-top: 1px solid var(--gray-700);
             padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: var(--gray-400);
         }
 
-        .footer-copyright {
-            color: var(--text-muted);
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .footer-social a {
-            color: var(--text-muted);
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .footer-social a:hover {
-            color: var(--primary);
-            background: rgba(249, 152, 63, 0.1);
-        }
-
-        /* Cookie Banner */
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--dark-light);
-            border-top: 2px solid var(--primary);
-            padding: 1.5rem 2rem;
-            z-index: 9998;
-            transform: translateY(100%);
-            transition: transform 0.4s ease;
-            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
-        }
-
-        .cookie-banner.show {
-            transform: translateY(0);
-        }
-
-        .cookie-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .cookie-title {
-            font-size: 1.1rem;
+        .footer-bottom p {
             margin-bottom: 0.5rem;
-            color: var(--text);
         }
 
-        .cookie-description {
-            color: var(--text-muted);
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .cookie-actions {
+        .footer-links-inline {
             display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        /* Popup */
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
             justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
+            gap: 2rem;
+            list-style: none;
         }
 
-        .popup-overlay.show {
-            opacity: 1;
-            visibility: visible;
+        .footer-links-inline a {
+            color: var(--gray-400);
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .popup {
-            background: var(--dark-light);
-            border: 1px solid rgba(249, 152, 63, 0.2);
-            border-radius: 16px;
-            max-width: 500px;
-            width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
+        .footer-links-inline a:hover {
+            color: white;
         }
 
-        .popup-overlay.show .popup {
-            transform: scale(1);
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        .popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 2rem 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .popup-title {
-            font-size: 1.8rem;
-            margin: 0;
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
             color: var(--text);
         }
 
-        .popup-close {
-            background: none;
-            border: none;
+        .section-description {
             color: var(--text-muted);
-            font-size: 1.8rem;
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .popup-close:hover {
-            color: var(--text);
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .popup-content {
-            padding: 2rem;
-        }
-
-        .popup-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: flex-end;
-            padding: 0 2rem 2rem;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
         }
 
         /* Responsive Design */
@@ -855,10 +713,11 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: linear-gradient(135deg, rgba(10, 10, 10, 0.98) 0%, rgba(26, 26, 26, 0.95) 100%);
+                background: white;
                 flex-direction: column;
                 padding: 2rem;
-                gap: 1rem;
+                box-shadow: var(--shadow-lg);
+                border-top: 1px solid var(--border);
             }
 
             .navbar-menu.active {
@@ -869,93 +728,47 @@
                 display: flex;
             }
 
-            .hero-actions {
-                flex-direction: column;
-                align-items: center;
+            .hero {
+                padding: 6rem 0 2rem;
             }
 
-            .contact-content {
+            .story-content,
+            .founder-content {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 2rem;
             }
 
-            .form-row {
+            .why-choose-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .founder-stats {
+                justify-content: space-around;
+            }
+
+            .cta h2 {
+                font-size: 2rem;
             }
 
             .footer-content {
                 grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-
-            .cookie-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .loading-logo {
-                width: 300px;
+                gap: 2rem;
             }
         }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
-        }
-
-        .fade-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    
-        .navbar-logo:hover {
-            transform: scale(1.05);
-            filter: drop-shadow(0 0 20px rgba(249, 152, 63, 0.8));
-        }
-        
-        </style>
-
-});
+    </style>
 <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
-       
-          
-   
-    <!-- Performance & Security -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
 </head>
 <body>
-    
-    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <img src="hlpfl-logo-full.svg" alt="HLPFL Logo" class="loading-logo">
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loadingBar"></div>
+        </div>
+        <div class="loading-percentage" id="loadingPercentage">0%</div>
+    </div>
 
-    <!-- Header -->
-    <!-- Premium Navigation -->
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
@@ -971,569 +784,361 @@
             
             <ul class="navbar-menu">
                 <li><a href="index.html" class="navbar-link">Home</a></li>
-                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="about.html" class="navbar-link active">About</a></li>
                 <li><a href="services.html" class="navbar-link">Services</a></li>
                 <li><a href="portfolio.html" class="navbar-link">Portfolio</a></li>
                 <li><a href="contact.html" class="navbar-link">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Get Quote</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content reveal">
-            <h1>
-                   <span class=white-text>Your First Website</span>
-                   <span class=copper-text>Shouldn't Break the Bank</span>
-               </h1>
-            <p>High-quality websites for first-time founders at prices you can actually afford. No outsourcing, full transparency, 100% US-based work.</p>
-            <div class="hero-cta">
-                <a href="contact.html" class="cta-button">Get Your Free Quote</a>
-                <a href="#how-it-works" class="secondary-button">See How It Works</a>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">About HLPFL</h1>
+                <p class="hero-subtitle">
+                    We're on a mission to make professional web development accessible to every first-time founder, regardless of budget.
+                </p>
             </div>
         </div>
-           <div class="scroll-indicator" onclick="document.querySelector('#value-props').scrollIntoView({behavior: 'smooth'})">
-               <span class="scroll-text">SCROLL</span>
-               <div class="scroll-arrow"></div>
-           </div>
     </section>
-    
 
-    <!-- Value Props Section -->
-n    <section class="container" id="value-props">
-n        <div class="section-header">
-n            <h2>Why Choose HLPFL</h2>
-n            <p>We're changing the game for first-time founders who need professional web development without the enterprise price tag.</p>
-n        </div>
-n        <div class="value-props">
-n            <div class="value-card reveal">
-n                <div class="value-icon">🚀</div>
-n                <h3>Lightning Fast Delivery</h3>
-n                <p>Your website ready in 72 hours or less. No endless waiting periods or complicated development cycles.</p>
-n            </div>
-n            <div class="value-card reveal">
-n                <div class="value-icon">💰</div>
-n                <h3>Transparent Pricing</h3>
-n                <p>No hidden fees, surprise charges, or confusing quotes. What we quote is what you pay.</p>
-n            </div>
-n            <div class="value-card reveal">
-n                <div class="value-icon">🇺🇸</div>
-n                <h3>100% US-Based</h3>
-n                <p>All work done by our team in Grand Rapids, Michigan. No outsourcing, no communication barriers.</p>
-n            </div>
-n        </div>
-n    </section>
+    <!-- Story Section -->
+    <section class="story">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-description">From failed ventures to helping founders succeed</p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-text">
+                    <h3>It Started With Failure</h3>
+                    <p>
+                        HLPFL was born from personal experience with the challenges first-time founders face. Our founder started his entrepreneurial journey at 18, launching his first venture with nothing but ambition and a laptop. Over the next 6 years, he built and launched over 20 different business ventures – some succeeded, many failed, but each one taught invaluable lessons.
+                    </p>
+                    <p>
+                        The biggest lesson? Most first-time founders fail not because their ideas are bad, but because they can't afford the tools and services they need to compete. Professional web development was consistently out of reach, with agencies charging $5,000-$50,000 for basic websites that took months to deliver.
+                    </p>
+                    <blockquote style="border-left: 4px solid var(--primary); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--text-muted);">
+                        "I remember sitting in my college dorm room, looking at quotes from web developers. $10,000 for a simple website? I had $200 in my bank account. That's when I decided to learn web development myself – and eventually, to make it accessible for others like me."
+                    </blockquote>
+                    
+                    <h3>The Mission</h3>
+                    <p>
+                        After years of building websites for his own ventures and learning what actually works, our founder realized he could help other first-time founders avoid the struggles he faced. HLPFL was created with a simple mission: deliver high-quality, professional websites at prices first-time founders can actually afford.
+                    </p>
+                    <p>
+                        We use AI-powered development tools not to cut corners, but to work more efficiently – passing those savings directly to our clients. We don't outsource because we believe in building real relationships with the founders we serve. And we offer sliding scale pricing because we remember what it's like to have more ambition than capital.
+                    </p>
+                    
+                    <h3>Today</h3>
+                    <p>
+                        Today, HLPFL serves first-time founders across the United States from our base in Grand Rapids, Michigan. We've helped launch dozens of businesses, from e-commerce stores to SaaS platforms to local service providers. Every project is an opportunity to help another founder avoid the struggles we faced and focus on what matters: building their business.
+                    </p>
+                </div>
+                <div class="story-image">
+                    <div class="story-image-placeholder">
+                        Our Journey Timeline
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Values</h2>
+                <p class="section-description">The principles that guide everything we do</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">💰</div>
+                    <h3 class="value-title">Accessibility First</h3>
+                    <p class="value-description">
+                        Professional web development shouldn't be a luxury. We believe every founder deserves access to quality websites, regardless of their current financial situation.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 class="value-title">Real Partnership</h3>
+                    <p class="value-description">
+                        We're not just service providers – we're partners in your success. Your wins are our wins, and we're invested in helping you grow.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🔍</div>
+                    <h3 class="value-title">Full Transparency</h3>
+                    <p class="value-description">
+                        No hidden fees, no surprises, no fine print. We believe in honest communication and clear expectations from day one.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3 class="value-title">Speed & Quality</h3>
+                    <p class="value-description">
+                        Fast delivery doesn't mean cutting corners. We use modern tools and efficient processes to deliver quality work quickly.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🇺🇸</div>
+                    <h3 class="value-title">Local Commitment</h3>
+                    <p class="value-description">
+                        100% US-based work means better communication, no timezone issues, and supporting the local economy. We never outsource.
+                    </p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3 class="value-title">Founder Mindset</h3>
+                    <p class="value-description">
+                        We think like founders because we are founders. We understand the hustle, the risks, and the dreams that drive entrepreneurship.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose HLPFL?</h2>
+                <p class="section-description">What makes us different from other web development agencies</p>
+            </div>
+            
+            <div class="why-choose-grid">
+                <div class="why-item">
+                    <div class="why-number">01</div>
+                    <div class="why-content">
+                        <h3>We've Been There</h3>
+                        <p>
+                            We're not corporate suits who've never struggled. We're founders who've experienced the challenges you're facing right now. We get it.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-number">02</div>
+                    <div class="why-content">
+                        <h3>Affordable Pricing</h3>
+                        <p>
+                            Sliding scale pricing based on your budget. We work with what you have, not what agencies think you should spend.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-number">03</div>
+                    <div class="why-content">
+                        <h3>Lightning Fast</h3>
+                        <p>
+                            72-hour delivery when you provide materials. We respect your time and understand that speed matters in business.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-number">04</div>
+                    <div class="why-content">
+                        <h3>No Outsourcing</h3>
+                        <p>
+                            100% US-based work from Grand Rapids, MI. You'll always talk to the people actually building your website.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-number">05</div>
+                    <div class="why-content">
+                        <h3>Modern Technology</h3>
+                        <p>
+                            We use AI-powered tools to work efficiently, but every project gets human expertise and attention to detail.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-number">06</div>
+                    <div class="why-content">
+                        <h3>Real Support</h3>
+                        <p>
+                            Post-launch support included with every package. We're here for questions, updates, and ongoing partnership.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Founder</h2>
+                <p class="section-description">The person behind HLPFL's mission</p>
+            </div>
+            
+            <div class="founder-content">
+                <div class="founder-info">
+                    <h3>HL</h3>
+                    <h4>Founder & Lead Developer</h4>
+                    <p>
+                        At just 24 years old, our founder brings 6+ years of entrepreneurial experience and a deep understanding of the challenges first-time founders face. Having launched over 20 ventures – from successful e-commerce stores to failed SaaS products – he learned firsthand what works and what doesn't in the startup world.
+                    </p>
+                    <p>
+                        After years of building websites for his own ventures and helping friends launch their businesses, he founded HLPFL with a mission to make professional web development accessible to every founder, regardless of budget. His approach combines modern AI-powered tools with hands-on expertise to deliver quality websites at unprecedented speed and affordability.
+                    </p>
+                    <p>
+                        Based in Grand Rapids, Michigan, he's committed to supporting the local entrepreneurial ecosystem while serving founders across the United States. When he's not building websites, you'll find him mentoring young entrepreneurs, exploring new technologies, or working on his next venture.
+                    </p>
+                    
+                    <div class="founder-stats">
+                        <div class="stat">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">Years Old</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Ventures Launched</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Dedicated</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="founder-image">
+                    <div class="founder-image-placeholder">
+                        Founder Photo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Work Together?</h2>
+            <p>
+                Let's have a free 30-minute discovery call to discuss your vision and see how we can help bring your website to life. 
+                No pressure, no sales pitch – just honest conversation about your goals.
+            </p>
+            <a href="contact.html" class="btn">Get My Free Quote</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <!-- Premium Footer -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">
-                        <img src="hlpfl-symbol.svg" alt="HLPFL" class="footer-logo-symbol">
-                        <span class="footer-logo-text">HLPFL</span>
-                    </a>
-                    <p class="footer-description">
-                        Transform your digital presence with premium web development 
-                        solutions that drive results and elevate your brand.
+                <div class="footer-section">
+                    <h3>HLPFL</h3>
+                    <p>
+                        Affordable, high-quality websites for first-time founders. 
+                        100% US-based work from Grand Rapids, MI.
                     </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
                         <li><a href="services.html">Web Design</a></li>
                         <li><a href="services.html">E-commerce</a></li>
-                        <li><a href="services.html">Performance</a></li>
-                        <li><a href="services.html">Consulting</a></li>
+                        <li><a href="services.html">SEO</a></li>
+                        <li><a href="services.html">Website Maintenance</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Company</h3>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                    </ul>
+                    <h3>Contact</h3>
+                    <p>
+                        <a href="mailto:hello@hlpfl.dev" style="color: inherit;">hello@hlpfl.dev</a><br>
+                        +1 (234) 567-890<br>
+                        Grand Rapids, MI
+                    </p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2024 HLPFL. All rights reserved. Crafted with passion and precision.
-                </p>
-                <div class="footer-social">
-                    <a href="index.html" aria-label="Twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                    </a>
-                    <a href="index.html" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="index.html" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path>
-                        </svg>
-                    </a>
-                </div>
+                <p>&copy; 2024 HLPFL. All rights reserved.</p>
+                <ul class="footer-links-inline">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
             </div>
         </div>
     </footer>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Loading Screen Implementation - PRESERVE CURRENT BEHAVIOR
-        let progress = 0;
+    <script>
+        // Loading Screen
+        let loadingProgress = 0;
+        const loadingScreen = document.getElementById('loadingScreen');
         const loadingBar = document.getElementById('loadingBar');
         const loadingPercentage = document.getElementById('loadingPercentage');
-        const loadingScreen = document.getElementById('loadingScreen');
-        
+
         const loadingInterval = setInterval(() => {
-            progress += Math.random() * 30;
-            if (progress >= 100) {
-                progress = 100;
-                clearInterval(loadingInterval);
+            loadingProgress += Math.random() * 15;
+            if (loadingProgress >= 100) {
+                loadingProgress = 100;
+                loadingBar.style.width = loadingProgress + '%';
+                loadingPercentage.textContent = Math.floor(loadingProgress) + '%';
+                
                 setTimeout(() => {
-                    loadingScreen.classList.add('hidden');
+                    loadingScreen.style.opacity = '0';
+                    loadingScreen.style.visibility = 'hidden';
                 }, 500);
+                
+                clearInterval(loadingInterval);
+            } else {
+                loadingBar.style.width = loadingProgress + '%';
+                loadingPercentage.textContent = Math.floor(loadingProgress) + '%';
             }
-            loadingBar.style.width = progress + '%';
-            loadingPercentage.textContent = Math.floor(progress) + '%';
-        }, 200);
+        }, 100);
 
-        // Create Loading Particles - PRESERVE CURRENT IMPLEMENTATION
-        const loadingParticlesContainer = document.getElementById('loadingParticles');
-        if (loadingParticlesContainer) {
-            for (let i = 0; i < 150; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'loading-particle';
-                
-                const size = Math.random() * 2 + 1;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 8 + 's';
-                particle.style.animationDuration = (Math.random() * 15 + 20) + 's';
-                
-                loadingParticlesContainer.appendChild(particle);
-            }
-        }
-
-        // Create Floating Particles - PRESERVE CURRENT IMPLEMENTATION
-        const particlesContainer = document.getElementById('particles');
-        if (particlesContainer) {
-            for (let i = 0; i < 200; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                const size = Math.random() * 2 + 1;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 25 + 's';
-                particle.style.animationDuration = (Math.random() * 15 + 20) + 's';
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // Premium Navigation Features
+        // Navbar Scroll Effect
         const navbar = document.getElementById('navbar');
-        if (navbar) {
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 100) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
-
-            // Mobile Menu Toggle
-            const navbarToggle = document.querySelector('.navbar-toggle');
-            const navbarMenu = document.querySelector('.navbar-menu');
-            
-            if (navbarToggle && navbarMenu) {
-                navbarToggle.addEventListener('click', () => {
-                    navbarMenu.classList.toggle('active');
-                });
-            }
-        }
-
-        // Smooth Scroll for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    const navbarMenu = document.querySelector('.navbar-menu');
-                    if (navbarMenu) {
-                        navbarMenu.classList.remove('active');
-                    }
-                }
-            });
-        });
-
-        // Active Navigation Link
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.navbar-link');
-
-        if (sections.length > 0 && navLinks.length > 0) {
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop - 100) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').slice(1) === current) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-        }
-
-        // Scroll Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-up').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Magnetic Button Effect
-        document.querySelectorAll('.btn-magnetic').forEach(button => {
-            button.addEventListener('mousemove', (e) => {
-                const rect = button.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                
-                button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-            });
-
-            button.addEventListener('mouseleave', () => {
-                button.style.transform = 'translate(0, 0)';
-            });
-        });
-
-        // Cookie Consent
-        const cookieBanner = document.getElementById('cookieBanner');
-        const consent = localStorage.getItem('cookieConsent');
-        
-        if (cookieBanner && !consent) {
-            setTimeout(() => {
-                cookieBanner.classList.add('show');
-            }, 2000);
-        }
-
-        window.acceptCookies = function() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            if (cookieBanner) {
-                cookieBanner.classList.remove('show');
-            }
-        };
-
-        window.declineCookies = function() {
-            localStorage.setItem('cookieConsent', 'declined');
-            if (cookieBanner) {
-                cookieBanner.classList.remove('show');
-            }
-        };
-
-        // Welcome Popup (only on homepage)
-        const popupOverlay = document.getElementById('popupOverlay');
-        const popupShown = localStorage.getItem('popupShown');
-        
-        if (popupOverlay && !popupShown && window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) {
-            setTimeout(() => {
-                popupOverlay.classList.add('show');
-                localStorage.setItem('popupShown', 'true');
-            }, 5000);
-        }
-
-        window.closePopup = function() {
-            if (popupOverlay) {
-                popupOverlay.classList.remove('show');
-            }
-        };
-
-        // Preserve existing functionality from original script
-        
-    document.addEventListener('DOMContentLoaded', function() {
-        // Standardized Loading Screen Implementation
-        let progress = 0;
-        const loadingBar = document.getElementById('loadingBar');
-        const loadingPercentage = document.getElementById('loadingPercentage');
-        const loadingScreen = document.getElementById('loadingScreen');
-        
-        const loadingInterval = setInterval(() => {
-            progress += Math.random() * 30;
-            if (progress >= 100) {
-                progress = 100;
-                clearInterval(loadingInterval);
-                setTimeout(() => {
-                    loadingScreen.classList.add('hidden');
-                }, 500);
-            }
-            loadingBar.style.width = progress + '%';
-            loadingPercentage.textContent = Math.floor(progress) + '%';
-        }, 200);
-
-        // Create Loading Particles - Dense Starlight Effect
-        const loadingParticlesContainer = document.getElementById('loadingParticles');
-        if (loadingParticlesContainer) {
-            for (let i = 0; i < 150; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'loading-particle';
-                
-                // Smaller particles for more elegant effect (1px to 3px)
-                const size = Math.random() * 2 + 1;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                // Random starting position
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                
-                // Varied animation properties for natural movement
-                particle.style.animationDelay = Math.random() * 8 + 's';
-                particle.style.animationDuration = (Math.random() * 15 + 20) + 's';
-                
-                loadingParticlesContainer.appendChild(particle);
-            }
-        }
-
-        // Create Floating Particles - Dense Starlight Effect (Background)
-        const particlesContainer = document.getElementById('particles');
-        if (particlesContainer) {
-            for (let i = 0; i < 200; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                // Smaller particles (1px to 3px)
-                const size = Math.random() * 2 + 1;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 25 + 's';
-                particle.style.animationDuration = (Math.random() * 15 + 20) + 's';
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // Cookies Banner
-        const banner = document.getElementById('cookieBanner');
-        const consent = localStorage.getItem('cookieConsent');
-        
-        // Only show banner if consent hasn't been given
-        if (!consent && banner) {
-            setTimeout(() => {
-                banner.classList.add('show');
-            }, 1000); // Show after 1 second
-        }
-
-        // Cookie consent functions
-        window.acceptCookies = function() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            const banner = document.getElementById('cookieBanner');
-            if (banner) {
-                banner.classList.remove('show');
-            }
-        };
-
-        window.declineCookies = function() {
-            localStorage.setItem('cookieConsent', 'declined');
-            const banner = document.getElementById('cookieBanner');
-            if (banner) {
-                banner.classList.remove('show');
-            }
-        };
-
-        // Header Scroll Effect
-        const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
-                header.classList.add('scrolled');
+                navbar.classList.add('scrolled');
             } else {
-                header.classList.remove('scrolled');
+                navbar.classList.remove('scrolled');
             }
         });
 
-        // Reveal Animation on Scroll
-        const reveals = document.querySelectorAll('.reveal');
-        const revealOnScroll = () => {
-            reveals.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('active');
-                }
-            });
-        };
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll();
-
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                faqItems.forEach(i => i.classList.remove('active'));
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
+        // Mobile Menu Toggle
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
         });
-
-        // Smooth Scroll for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    });
-    
-    });
-</script>
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js">
-        // Custom Cursor
-        const cursor = document.createElement('div');
-        cursor.className = 'custom-cursor';
-        cursor.style.cssText = 'position: fixed; top: 0; left: 0; width: 20px; height: 20px; border: 2px solid var(--primary); border-radius: 50%; pointer-events: none; z-index: 10000; transition: transform 0.1s ease; mix-blend-mode: difference;';
-        document.body.appendChild(cursor);
-        
-        // Create cursor trail
-        const cursorTrail = [];
-        for (let i = 0; i < 8; i++) {
-            const trail = document.createElement('div');
-            trail.style.cssText = 'position: fixed; top: 0; left: 0; width: 8px; height: 8px; background: var(--primary-glow, #ffaa44); border-radius: 50%; pointer-events: none; z-index: 9999; opacity: 0.8;';
-            document.body.appendChild(trail);
-            cursorTrail.push(trail);
-        }
-        
-        let mouseX = 0, mouseY = 0;
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            
-            cursor.style.left = mouseX - 10 + 'px';
-            cursor.style.top = mouseY - 10 + 'px';
-            
-            cursorTrail.forEach((trail, index) => {
-                setTimeout(() => {
-                    trail.style.left = mouseX - 4 + 'px';
-                    trail.style.top = mouseY - 4 + 'px';
-                    trail.style.opacity = 0.8 - (index * 0.1);
-                }, index * 20);
-            });
-        });
-        
-        // Konami Code Easter Egg
-        const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-        let konamiIndex = 0;
-        
-        document.addEventListener('keydown', (e) => {
-            if (e.key === konamiCode[konamiIndex]) {
-                konamiIndex++;
-                if (konamiIndex === konamiCode.length) {
-                    alert('🚀 Secret Mode Activated! You found the Konami Code!');
-                    konamiIndex = 0;
-                }
-            } else {
-                konamiIndex = 0;
-            }
-        });
-        
-        // Keyboard Shortcuts for Navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.ctrlKey || e.metaKey) {
-                switch(e.key) {
-                    case '1': e.preventDefault(); document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' }); break;
-                    case '2': e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); break;
-                    case '3': e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); break;
-                    case '4': e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }); break;
-                    case '5': e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); break;
-                }
-            }
-        });
-        
-        // Hide cursor on mobile
-        if (window.innerWidth <= 768) {
-            cursor.style.display = 'none';
-            cursorTrail.forEach(trail => trail.style.display = 'none');
-            document.body.style.cursor = 'auto';
-        }
-    
-        </script>
-   
-   
-    <!-- Cookie Consent Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <p>
-                    <strong>🍪 We use cookies</strong> to enhance your browsing experience and analyze our traffic. 
-                    By clicking "Accept", you consent to our use of cookies. 
-                    <a href="index.html" onclick="event.preventDefault();">Learn more</a>
-                </p>
-            </div>
-            <div class="cookie-actions">
-                <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Accept All</button>
-                <button class="cookie-btn cookie-btn-decline" onclick="declineCookies()">Decline</button>
-            </div>
-        </div>
-    </div>
-
+    </script>
 </body>
 </html>
