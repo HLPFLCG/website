@@ -235,7 +235,21 @@
             color: var(--primary);
         }
 
-        .nav-links a.active {\n            color: var(--primary);\n            position: relative;\n        }\n\n        .nav-links a.active::after {\n            content: '';\n            position: absolute;\n            bottom: -5px;\n            left: 0;\n            right: 0;\n            height: 2px;\n            background: linear-gradient(90deg, var(--primary), var(--primary-light));\n            border-radius: 1px;\n        }
+        .nav-links a.active {
+n            color: var(--primary);
+n            position: relative;
+n        }
+n
+n        .nav-links a.active::after {
+n            content: '';
+n            position: absolute;
+n            bottom: -5px;
+n            left: 0;
+n            right: 0;
+n            height: 2px;
+n            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+n            border-radius: 1px;
+n        }
         
         .cta-button {
             background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -1135,26 +1149,6 @@
 
     
         /* Enhanced Loading Screen */
-        #loadingScreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #000000 0%, #1a0a00 50%, #000000 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
-        }
-        
-        #loadingScreen.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
-        
         /* Floating Particles Background */
         .loading-particles {
             position: absolute;
@@ -1588,7 +1582,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+               <p>Learn about our mission to make professional web development accessible to first-time founders. Discover our story, values, and the passionate experts who bring your vision to life.</p>
             </ul>
             
             <button class="mobile-menu-toggle">☰</button>
@@ -1615,7 +1609,30 @@
     </section>
     
 
-    <!-- Value Props Section -->\n    <section class="container" id="value-props">\n        <div class="section-header">\n            <h2>Why Choose HLPFL</h2>\n            <p>We're changing the game for first-time founders who need professional web development without the enterprise price tag.</p>\n        </div>\n        <div class="value-props">\n            <div class="value-card reveal">\n                <div class="value-icon">🚀</div>\n                <h3>Lightning Fast Delivery</h3>\n                <p>Your website ready in 72 hours or less. No endless waiting periods or complicated development cycles.</p>\n            </div>\n            <div class="value-card reveal">\n                <div class="value-icon">💰</div>\n                <h3>Transparent Pricing</h3>\n                <p>No hidden fees, surprise charges, or confusing quotes. What we quote is what you pay.</p>\n            </div>\n            <div class="value-card reveal">\n                <div class="value-icon">🇺🇸</div>\n                <h3>100% US-Based</h3>\n                <p>All work done by our team in Grand Rapids, Michigan. No outsourcing, no communication barriers.</p>\n            </div>\n        </div>\n    </section>
+    <!-- Value Props Section -->
+n    <section class="container" id="value-props">
+n        <div class="section-header">
+n            <h2>Why Choose HLPFL</h2>
+n            <p>We're changing the game for first-time founders who need professional web development without the enterprise price tag.</p>
+n        </div>
+n        <div class="value-props">
+n            <div class="value-card reveal">
+n                <div class="value-icon">🚀</div>
+n                <h3>Lightning Fast Delivery</h3>
+n                <p>Your website ready in 72 hours or less. No endless waiting periods or complicated development cycles.</p>
+n            </div>
+n            <div class="value-card reveal">
+n                <div class="value-icon">💰</div>
+n                <h3>Transparent Pricing</h3>
+n                <p>No hidden fees, surprise charges, or confusing quotes. What we quote is what you pay.</p>
+n            </div>
+n            <div class="value-card reveal">
+n                <div class="value-icon">🇺🇸</div>
+n                <h3>100% US-Based</h3>
+n                <p>All work done by our team in Grand Rapids, Michigan. No outsourcing, no communication barriers.</p>
+n            </div>
+n        </div>
+n    </section>
 
     
 
