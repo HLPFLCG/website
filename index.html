@@ -135,18 +135,51 @@
             position: absolute;
             width: 2px;
             height: 2px;
-            background: var(--primary);
+            background: radial-gradient(circle, rgba(200, 121, 65, 0.9) 0%, rgba(200, 121, 65, 0.3) 50%, transparent 70%);
             border-radius: 50%;
-            opacity: 0.4;
-            animation: float 20s infinite ease-in-out;
-            box-shadow: 0 0 2px rgba(200, 121, 65, 0.5);
+            opacity: 0.6;
+            animation: float 20s infinite ease-in-out, twinkle 3s infinite ease-in-out, drift 8s infinite ease-in-out;
+            box-shadow: 
+                0 0 4px rgba(200, 121, 65, 0.8),
+                0 0 8px rgba(200, 121, 65, 0.4),
+                0 0 12px rgba(200, 121, 65, 0.2);
         }
         
         @keyframes float {
-            0%, 100% { transform: translateY(0) translateX(0); }
-            25% { transform: translateY(-100px) translateX(50px); }
-            50% { transform: translateY(-200px) translateX(-50px); }
-            75% { transform: translateY(-100px) translateX(100px); }
+            0%, 100% { 
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0.3;
+            }
+            25% { 
+                transform: translateY(-100px) translateX(50px) scale(1.2);
+                opacity: 0.8;
+            }
+            50% { 
+                transform: translateY(-200px) translateX(-50px) scale(0.8);
+                opacity: 1;
+            }
+            75% { 
+                transform: translateY(-100px) translateX(100px) scale(1.1);
+                opacity: 0.6;
+            }
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { 
+                opacity: 0.2;
+                filter: brightness(0.5);
+            }
+            50% { 
+                opacity: 1;
+                filter: brightness(1.5);
+            }
+        }
+        
+        @keyframes drift {
+            0% { transform: translateX(0) translateY(0); }
+            33% { transform: translateX(30px) translateY(-30px); }
+            66% { transform: translateX(-20px) translateY(20px); }
+            100% { transform: translateX(0) translateY(0); }
         }
         
         /* Header */
@@ -201,6 +234,8 @@
         .nav-links a:hover {
             color: var(--primary);
         }
+
+           .nav-links a.active {\n               color: var(--primary);\n               position: relative;\n           }\n\n           .nav-links a.active::after {\n               content: '';\n               position: absolute;\n               bottom: -5px;\n               left: 0;\n               right: 0;\n               height: 2px;\n               background: linear-gradient(90deg, var(--primary), var(--primary-light));\n               border-radius: 1px;\n           }
         
         .cta-button {
             background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -1455,7 +1490,7 @@
         <nav>
             <img src="hlpfl-symbol.svg" alt="HLPFL" class="logo">
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
